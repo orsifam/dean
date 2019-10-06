@@ -31,8 +31,8 @@ Buttons
 		tooltip class:red
 		
 Resources
-	*cheese
-		name:cheese
+	*bunny|bunnies
+		name:bunny|bunnies
 		desc:This is your cheese. You can use it to purchase things. Your goal is to have as much cheese as possible!
 		icon:icons[0,0]
 		class:noBackground
@@ -63,7 +63,7 @@ Shinies
 				yield $amount bunnies
 			else
 				$amount=1*$boost
-				toast The lucky cheese grants you<//><b>[$amount] golden cheese[s?$amount]</b>!
+				toast The luckyCheese grants you<//><b>[$amount] golden cheese[s?$amount]</b>!
 				yield $amount goldenCheese
 			end
 		end
