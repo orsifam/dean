@@ -17,9 +17,9 @@ Layout
 	use default
 		
 Buttons
-	*cheeseButton
-		name:Make a cheese
-		desc:Click this cheese to get more cheese!
+	*bunnyButton
+		name:Make a bunny
+		desc:Click this bunny to get more bunnies!
 		on click:anim icon wobble
 		on click:yield 1 cheese
 		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCheese
