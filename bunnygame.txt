@@ -33,6 +33,13 @@ Buttons
 Resources
 	*bunny|bunnies
 		name:bunny|bunnies
+		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as much bunnies as possible!
+		icon:icons[0,0]
+		class:noBackground
+		show earned
+		
+	*cheese
+		name:cheese
 		desc:This is your cheese. You can use it to purchase things. Your goal is to have as much cheese as possible!
 		icon:icons[0,0]
 		class:noBackground
