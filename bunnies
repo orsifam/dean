@@ -21,9 +21,22 @@ Buttons
 		name:Make a bunny
 		desc:Click this little bunny to get more bunnies!
 		on click:anim icon wobble
-		on click:yield 1000000000000 bunny
+		on click:yield 1 bunny
 		on click:if (have goldenTouch and chance(100%)) yield 100000 goldenCarrot
 		icon:stuff/bunny.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+		
+	*castleButton
+		name:Make a castle
+		desc:Click this castle to get more castles.
+		on click:anim icon wobble
+		on click:yield 1 castle
+		on click:if (have goldenTouch and chance(100%)) yield 100000 goldenCarrot
+		icon:icons[3,8]
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
@@ -35,6 +48,13 @@ Resources
 		name:Bunny|Bunnies
 		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
 		icon:icons[0,0]
+		class:noBackground
+		show earned
+		
+		*castle|castles
+		name:Castle|Castles
+		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
+		icon:icons[3,8]
 		class:noBackground
 		show earned
 		
