@@ -36,7 +36,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 castle
 		on click:if (have goldenTouch and chance(100%)) yield 100000 goldenCarrot
-		icon:icons[3,8]
+		icon:icons[1,1]
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
