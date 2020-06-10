@@ -21,7 +21,7 @@ Buttons
 		name:Make a bunny
 		desc:Click this little bunny to get more bunnies!
 		on click:anim icon wobble
-		on click:yield 1 bunny
+		on click:yield 100000000000 bunny
 		on click:if (have goldenTouch and chance(100%)) yield 100000 goldenCarrot
 		icon:stuff/bunny.png
 		no text
@@ -32,11 +32,11 @@ Buttons
 		
 	*castleButton
 		name:Make a castle
-		desc:Click this castle to get more castles.
+		desc: "..."
 		on click:anim icon wobble
 		on click:yield 1 castle
 		on click:if (have goldenTouch and chance(100%)) yield 100000 goldenCarrot
-		icon:icons[1,1]
+		icon:icons[3,8]
 		no text
 		class:bigButton hasFlares
 		icon class:shadowed
@@ -88,27 +88,7 @@ Shinies
 			end
 		end
 		
-	*luckyCarrot
-		on click:log Woop
-		movement:onRight moveLeft fade bounce:0.05
-		frequency:6
-		frequency variation:3
-		icon:icons[0,1]
-		class:bigButton
-		on click:
-			$boost=1
-			if (have clover) $boost=4
-			if (chance(25%))
-				//get at least 7, or between 5 and 14 minutes of our bunny production
-				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
-				toast The lucky bunny grants you<//><b>[$amount] bunnies</b>.
-				yield $amount bunnies
-			else
-				$amount=1*$boost
-				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
-				yield $amount goldenCarrot
-			end
-		end
+	
 	
 
 Buildings
@@ -188,7 +168,7 @@ Buildings
 		cost:300000000 bunnies, 100 goldenCarrots
 		req:70000000 bunnies:earned and independenceDay
 		limit:100
-		cost increase:105%
+		cost increase:75%
 		
 Upgrades
 	*TEMPLATE
